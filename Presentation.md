@@ -235,12 +235,6 @@
 - Meta (Llama)
 - Open Source Ecosystem
 
-- OpenAI (GPT-4o, GPT-o1-Preview)
-- Anthropic (Claude 3)
-- Google (Gemini)
-- Meta (Llama)
-- Open Source Ecosystem
-
 > SPEAKER NOTES (4 minutes):
 >
 > Historical Context:
