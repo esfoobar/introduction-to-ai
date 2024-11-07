@@ -12,11 +12,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Session Format:
-> - Interactive components throughout
-> - Hands-on demonstrations
-> - Extended Q&A at the end
-> - Resources will be shared after
+> General agenda setting
 
 ## Introduction to LLMs (15 minutes)
 
@@ -32,20 +28,14 @@
   - Face recognition: ~millions of parameters
   - GPT-4: >1 trillion parameters
 - Training Process
-  - Like tuning millions of interconnected knobs
-  - Automatic parameter adjustment
+  - Parameters are the controlling knobs of the model
+  - Like tuning millions of interconnected instruments in an orchestra
   - Pattern recognition and optimization
-  - Fixed settings after training
+  - Once trained, the model can't learn new things
 
 > SPEAKER NOTES (4 minutes):
 >
-> Opening Hook:
-> "Imagine having a conversation with someone who has read every book ever written."
->
-> Focus Areas:
-> - Real-world analogies for technical concepts
-> - Historical context of AI development
-> - Future implications
+> What are LLMs?
 
 ### Text Processing
 
@@ -53,7 +43,6 @@
   - Breaking text into processable pieces
   - Like Lego blocks of language
   - Enables handling of new words
-  - Vocabulary of 50,000-100,000 tokens
 - Common Word Processing
   - Frequent words as single tokens
   - Complex words split into pieces
@@ -61,14 +50,11 @@
 - Special Cases
   - Emoji processing: 🙂 as single token
   - Numbers and symbols: "hello123" → "hello" "123"
-  - Multilingual support and Unicode handling
+  - Offers Multilingual support and Unicode handling
 
 > SPEAKER NOTES (3 minutes):
 >
-> Live Demonstration Ideas:
-> - Show tokenization in action
-> - Compare different tokenization approaches
-> - Discuss API cost implications
+> The fundamental building blocks of LLMs are tokens
 
 ### Current Capabilities
 
@@ -78,17 +64,24 @@
   - Task adaptation and flexibility
   - Knowledge synthesis and application
 - Real-World Applications
-  - Writing assistance (Grammarly, Google Docs)
+  - Writing assistance and content generation
   - Customer service automation
-  - Code completion (GitHub Copilot)
-  - Content generation and analysis
+  - Code completion
+  - Knowledge analysis and pattern recognition
 
 > SPEAKER NOTES (4 minutes):
 >
-> Industry Examples:
-> - Success stories
-> - Implementation challenges
-> - ROI metrics
+> What can they do?
+
+### The Context Window
+- Context Window
+  - The amount of text the model can "see" at once
+  - Determines the scope of understanding and provides guidance
+  - Allows the model to understand the progression of a conversation
+
+> SPEAKER NOTES (4 minutes):
+>
+> What is the context?
 
 ### Challenges and Limitations
 
@@ -107,10 +100,7 @@
 
 > SPEAKER NOTES (4 minutes):
 >
-> Recent Examples:
-> - High-profile failure cases
-> - Industry solutions
-> - Ongoing research
+> What are the challenges?
 
 ## Major AI Models (15 minutes)
 
@@ -143,21 +133,19 @@
     * Basic automation needs
     * High-throughput processing
 
-> SPEAKER NOTES (5 minutes):
->
-> Market Trends:
-> - Competition dynamics
-> - Pricing strategies
-> - Integration patterns
-
-### Open Source and Specialized
-
 - Google's Gemini Series
   - Ultra: Enterprise multimodal
   - Pro: General purpose
   - Nano: Mobile optimization
+
+> SPEAKER NOTES (5 minutes):
+>
+> Commercial Leaders:
+
+### Open Source and Specialized
+
 - Open Source Leaders
-  - Llama 2 Family
+  - Llama 2 Family (Meta)
     * Multiple sizes (7B-70B parameters)
     * Commercial-friendly licensing
     * Strong performance metrics
@@ -176,12 +164,9 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Development Trends:
-> - Emerging technologies
-> - Community contributions
-> - Licensing considerations
+> Open Source and Specialized Models:
 
-### Selection Criteria
+### When to Select Each Model?
 
 - Task Requirements
   - Complexity level assessment
@@ -223,22 +208,18 @@
     * FORMAT: Desired output structure
     * CONSTRAINTS: Limitations
     * EXAMPLE: Sample output
-  - Consistent formatting
   - Reusable patterns
+    - Claude Projects
 
 > SPEAKER NOTES (5 minutes):
 >
 > Opening Hook:
 > "Prompt engineering is like learning to communicate with a brilliant but very literal foreign exchange student."
->
-> Live Demonstration:
-> - Show before/after examples
-> - Common mistake examples
 
 ## Advanced Techniques
 
 - Few-shot Learning
-  - Multiple examples for pattern learning
+  - Like teaching a kid to recognize a cat by providing photos
   - Consistent format across examples
   - Progressive complexity
 - Chain of Thought
@@ -250,40 +231,10 @@
     * "As a senior software architect..."
     * "Taking the perspective of a UX researcher..."
     * "Acting as an experienced data analyst..."
-  - Specialty knowledge activation
-  - Contextual awareness
 
 > SPEAKER NOTES (5 minutes):
 >
-> Implementation Tips:
-> - Industry-specific examples
-> - Common pitfalls to avoid
-> - Performance optimization
-
-## Model-Specific Optimization
-
-- GPT-4 Strategies
-  - Explicit instruction preference
-  - Structured output formatting
-  - Code and technical content focus
-- Claude Optimization
-  - Natural language approach
-  - Analysis and writing strength
-  - Nuanced instruction handling
-- Cost Considerations
-  - Token usage optimization
-  - Context window management
-  - Pricing structures by model
-    * GPT-4: $0.01-0.03 per 1K tokens
-    * Claude: Competitive pricing
-    * Open source: Infrastructure costs
-
-> SPEAKER NOTES (5 minutes):
->
-> Latest Updates:
-> - New model capabilities
-> - Pricing changes
-> - Feature comparisons
+> Advanced Strategies for prompt engineerings
 
 # Image Generation (15 minutes)
 
@@ -309,10 +260,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Platform Selection:
-> - Use case considerations
-> - Cost-benefit analysis
-> - Integration requirements
+> Leading Platforms
 
 ## Prompt Techniques
 
@@ -337,10 +285,17 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Live Demonstrations:
-> - Cross-platform comparisons
-> - Prompt refinement process
-> - Output variations
+> Techniques for Image Generation
+
+## Image Prompt Example:
+
+- Example Prompt:
+  - Description:
+    - "Create an image of a futuristic cityscape at night with neon lights and flying cars. The city should have a central tower with a glowing logo on top. The cars should be sleek and aerodynamic, with glowing trails behind them. The overall atmosphere should be vibrant and dynamic."
+  - Style:
+    - "Cyberpunk aesthetic, Neon color palette, Detailed lighting effects"
+  - Technical Parameters:
+    - "4K resolution, High contrast, Long exposure effect"
 
 ## Current Limitations
 
@@ -359,10 +314,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Industry Trends:
-> - Emerging solutions
-> - Legal frameworks
-> - Future developments
+> Current Limitations and Industry Solutions
 
 # RAG Systems (15 minutes)
 
@@ -388,10 +340,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Cost Considerations:
-> - Implementation expenses
-> - Operational costs
-> - Scaling factors
+> Components of RAG Systems
 
 ## Implementation Steps
 
@@ -412,10 +361,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Technical Considerations:
-> - Architecture decisions
-> - Performance optimization
-> - Maintenance requirements
+> Implementation Strategies
 
 ## Best Practices
 
@@ -437,17 +383,14 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Case Studies:
-> - Success stories
-> - Common pitfalls
-> - Optimization examples
+> Best Practices
 
 # AI Agents: The Next Frontier (15 minutes)
 
 ## Understanding AI Agents
 
 - Definition and Scope
-  - Autonomous AI systems
+  - Each agent has a specific focus and narrow domain
   - Goal-oriented behavior
   - Self-directed task completion
   - Tool use and integration
@@ -460,55 +403,25 @@
     * Short-term context
     * Long-term knowledge
     * Experience learning
-  - Tool Integration
+  - Queing and scheduling
     * API connections
     * External service access
     * Data source management
 
 > SPEAKER NOTES (5 minutes):
 >
-> Evolution Context:
-> - Historical development
-> - Current breakthroughs
-> - Future implications
-
-## Current Capabilities
-
-- Task Automation
-  - Complex workflow management
-  - Multi-step processes
-  - Error handling and recovery
-- Tool Utilization
-  - Web browsing and research
-  - Data analysis and processing
-  - Content creation and editing
-- Decision Making
-  - Context-aware choices
-  - Risk assessment
-  - Outcome optimization
-- Interaction Models
-  - Natural language interface
-  - Structured commands
-  - Feedback incorporation
-
-> SPEAKER NOTES (5 minutes):
->
-> Technical Deep Dive:
-> - Architecture examples
-> - Implementation methods
-> - Performance metrics
+> What are AI Agents?
 
 ## Implementation Strategies
 
 - Architecture Design
   - Agent frameworks
-    * LangChain
+    * LangChain Agents
     * AutoGPT
-    * BabyAGI
-  - Component selection
-  - Integration patterns
+    * OpenAI Swarm
+    * Microsoft Copilot Studio
 - Development Approach
-  - Iterative testing
+  - End-to-end testing
   - Capability expansion
   - Safety measures
 - Deployment Considerations
@@ -522,36 +435,26 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Case Studies:
-> - Success stories
-> - Learning experiences
-> - Best practices
+> Implementation of AI agents
 
-## Challenges and Future
+## Examples of Successful AI Agents
 
-- Current Limitations
-  - Reliability issues
-  - Control challenges
-  - Resource intensity
-- Emerging Solutions
-  - Enhanced reasoning
-  - Better memory systems
-  - Improved tool use
-- Future Developments
-  - Multi-agent systems
-  - Specialized agents
-  - Advanced autonomy
-- Safety Considerations
-  - Control mechanisms
-  - Oversight systems
-  - Ethical guidelines
+- Customer Service Agents
+  - Chatbots and virtual assistants
+  - Task automation
+  - Information retrieval
+- Research Assistants
+    - Literature review
+    - Data analysis
+    - Experiment design
+- Creative Partners
+    - Content generation
+    - Design assistance
+    - Idea generation
 
 > SPEAKER NOTES (5 minutes):
 >
-> Industry Trends:
-> - Research directions
-> - Commercial applications
-> - Regulatory landscape
+> Examples of AI Agents
 
 # Interactive Q&A (15 minutes)
 
@@ -572,59 +475,7 @@
 
 > SPEAKER NOTES (5 minutes):
 >
-> Preparation:
-> - Common concerns
-> - Technical details
-> - Resource links
-
-## Practical Examples
-
-- Use Cases
-  - Content generation
-  - Data analysis
-  - Customer service
-  - Research assistance
-- Implementation Patterns
-  - Direct API integration
-  - Managed services
-  - Hybrid approaches
-- Success Metrics
-  - Performance indicators
-  - Quality measures
-  - ROI calculation
-
-> SPEAKER NOTES (5 minutes):
->
-> Discussion Points:
-> - Industry-specific applications
-> - Scaling considerations
-> - Future opportunities
-
-## Additional Resources
-
-- Documentation
-  - API references
-  - Implementation guides
-  - Best practices
-- Community Support
-  - Forums and groups
-  - Open source projects
-  - Learning resources
-- Further Learning
-  - Online courses
-  - Technical papers
-  - Industry blogs
-- Contact Information
-  - Support channels
-  - Professional services
-  - Community engagement
-
-> SPEAKER NOTES (5 minutes):
->
-> Closing Notes:
-> - Key takeaways
-> - Next steps
-> - Contact methods
+> Q&A Session
 
 # Closing Remarks
 
@@ -633,18 +484,8 @@
   - Implementation strategies
   - Best practices
   - Future developments
-- Next Steps
-  - Getting started guides
-  - Resource access
-  - Community engagement
-- Contact Information
-  - Technical support
-  - Professional services
-  - Community resources
+
 
 > SPEAKER NOTES:
 >
-> Final Thoughts:
-> - Emphasize practical applications
-> - Encourage exploration
-> - Highlight support resources
+> Concluding thoughts
